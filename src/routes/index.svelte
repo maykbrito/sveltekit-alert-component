@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import {ALERT_TYPES, displayAlert} from '../components/alert-store'
+
+    displayAlert('Whatch the tutorial', ALERT_TYPES.SUCCESS, 7000)
+
+    setTimeout(() => {
+        displayAlert('Thanks!', ALERT_TYPES.INFO, 7000)
+    }, 7700)
+</script>
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/AeOn4YdN7JM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
